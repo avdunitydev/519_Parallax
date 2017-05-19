@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7aed48cfc642f43b8a5fd3edf8e29a95
+timeCreated: 1495190165
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Jokerman
+  fontNames:
+  - Jokerman
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 9c36477bded8842339a9074d18e15c09, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
