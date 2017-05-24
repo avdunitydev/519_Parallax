@@ -18,12 +18,12 @@ public class ParticalEfect : MonoBehaviour
 		
 		if (other.name.Equals ("Cube (0)")) {
 			int numCollisionEvents = ps.GetCollisionEvents (other, collEvent1);
-			Material mat = other.GetComponent<Material> ();
+			MeshRenderer mat = other.GetComponent<MeshRenderer> ();
 
 			int i = 0;
 
 			while (i < numCollisionEvents) {
-				mat.color = new Color (Random.Range (0, 250), Random.Range (0, 250), Random.Range (0, 250), 0);
+				mat.material.color = new Color ((float)Random.Range (0, 250), (float)Random.Range (0, 250), (float)Random.Range (0, 250), (float)Random.Range (0, 250));
 				i++;
 			}
 		}
