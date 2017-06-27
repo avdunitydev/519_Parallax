@@ -11,12 +11,13 @@ public class FreeParallaxDemo : MonoBehaviour
 
 	public FreeParallax parallax;
 	public GameObject cloud;
+	public float moveSpeed;
 
 	// Use this for initialization
 	void Start ()
 	{
 		if (cloud != null) {
-			cloud.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0.1f, 0.0f);
+			cloud.GetComponent<Rigidbody2D> ().velocity = new Vector2 (0.2f, 0.0f);
 		}
 	}
 
@@ -25,11 +26,11 @@ public class FreeParallaxDemo : MonoBehaviour
 	{
 		if (parallax != null) {
 			if (Input.GetKey (KeyCode.LeftArrow)) {
-				parallax.Speed = 15.0f;
+				parallax.Speed = moveSpeed;
 			} else if (Input.GetKey (KeyCode.RightArrow)) {
-				parallax.Speed = -15.0f;
+				parallax.Speed = -moveSpeed;
 			} else {
-				parallax.Speed = 0.0f;
+				parallax.Speed = 0.1f;
 			}
 		}
 	}
